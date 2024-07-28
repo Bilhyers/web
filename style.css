@@ -1,0 +1,280 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+.logo_principal {
+    width: 150px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header ul li{
+    margin: 25px;
+    list-style: none;
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+.nav-link{
+    color: rgb(0, 0, 0);
+}
+
+header ul {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    
+}    
+
+.contenedores{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff; 
+    
+}
+
+.foto-section{
+    border-radius: 100%;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.texto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 70px 40px 70px;
+}
+
+.section img{
+    width: 70%;
+}
+
+.section div h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+}
+
+.section div p{
+    font-size: 30px;
+}
+
+.mb-3{
+    width: 100%;
+    font-size: 30px;
+}
+
+.row{
+    text-align: center;
+}
+
+button{
+    width: 200px;
+    background-color: black;
+}
+
+
+
+.letra{
+    font-size: 30px;
+    color: rgb(116, 44, 44);
+    background-color: rgb(255, 0, 0);
+    border-radius: 25%;
+}
+
+.carousel-item {
+     /* Ajusta la altura del carrusel */
+    background-color: #777; /* Color de fondo para visualizar mejor */
+    margin-top: 150px; /* Ajusta este valor para que no se solape el contenido con el header */
+    
+}
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.footer{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #1e271a;
+    justify-content: space-between;
+    
+}
+
+.logo_secundario{
+    width: 100px;
+}
+
+.ayuda{
+    margin: 30px;
+    font-size: 30px;
+    list-style: none;
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+}
+
+
+.instagram{
+    width: 50px;
+}
+
+.youtube{
+    width: 50px;
+
+}
+
+.tiktok{
+    width: 50px;
+}
+
+
+
+
+
+
+
+<!-- parte dos de codigo en modificacion
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.product {
+    background-color: #fff;
+    border: 5px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.product h3 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.precio{
+    color: #158049;
+    font-weight: bold;
+}
+
+.descripcion{
+    color: #383cfd;
+    
+}
+
+
+
+.buy-button {
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.buy-button:hover {
+    background-color: #1f9c4d; /* Color del botón al pasar el cursor */
+}
+
+.zoom {
+    transition: transform 0.2s; /* Animación de zoom */
+    cursor: pointer;
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* Escalar imagen al 150% */
+}
+
+
+
+/* Estilos para bajas resoluciones */
+@media (max-width: 768px) {
+    .product {
+        width: 45%;
+    }
+
+    .product h3 {
+        font-size: 1.2em;
+    }
+
+    .product .descripcion, .product .precio {
+        font-size: 0.9em;
+    }
+
+    .buy-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 80%;
+    }
+
+    .product h3 {
+        font-size: 1em;
+    }
+
+    .product .descripcion, .product .precio {
+        font-size: 0.8em;
+    }
+
+    .buy-button {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+}
